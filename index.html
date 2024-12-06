@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フェアトレードクイズ</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let UserName=document.getElementById("user_name");
+            let StartBtn=document.getElementById("start_btn");
+
+            StartBtn.addEventListener('click', () => {            
+                if(UserName.value){
+                    localStorage.setItem("NameOfUser",UserName.value)
+                    setTimeout(function() {
+                        window.location.href="quiz1.html";
+                    }, 500); 
+                }
+                else{
+
+                    alert("名前を入力してください");
+
+                }
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src=""  id="banana_all">
+            <img src=""  id="banana_off">
+            <div id="menu_list">
+                <li>
+                    <a href="index.html"><p>ホーム</p></a>
+                    <a href="index.html"><p>フェアトレードとは</p></a>
+                </li>
+            </div>
+        </div>
+    </header>
+    <div class="title">
+        <h1>フェアトレード<br>クイズ</h1>
+        <input type="text" placeholder="名前を入力してください" id="user_name">
+        <!-- <a href="quiz1.html"><h2 id="start_btn">START</h2></a> -->
+        <h2 id="start_btn">START</h2>
+    </div>
+    <script  src="script.js"></script>
+</body>
+</html>

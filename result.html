@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let NextBtn=document.getElementById("next_btn");
+
+            NextBtn.addEventListener('click', () => {
+                window.location.href="index.html";
+            })
+
+            let Answer1=localStorage.getItem("option1_answer");
+            let Answer2=localStorage.getItem("option2_answer");
+            let Answer3=localStorage.getItem("option3_answer");
+            let Answer4=localStorage.getItem("option4_answer");
+            let Answer5=localStorage.getItem("option5_answer");
+            let Answer6=localStorage.getItem("option6_answer");
+            let Answer7=localStorage.getItem("option7_answer");
+            let Answer8=localStorage.getItem("option8_answer");
+            let Answer9=localStorage.getItem("option9_answer");
+            let Answer10=localStorage.getItem("option10_answer");
+
+            let result_point=0;
+
+            if (Answer1=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer2=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer3=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer4=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer5=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer6=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer7=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer8=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer9=="right"){
+                result_point=result_point+10;
+            }
+            if (Answer10=="right"){
+                result_point=result_point+10;
+            }
+            document.getElementById("result").innerHTML=result_point;
+        });
+        const QUIZ_ATTEMPTS_KEY = "quizAttempts";
+
+// 最大試行回数
+const MAX_ATTEMPTS = 2;
+
+// クイズ回数を取得
+let attempts = localStorage.getItem(QUIZ_ATTEMPTS_KEY) || 0;
+
+// ページ読み込み時のチェック
+document.addEventListener("DOMContentLoaded", () => {
+  if (attempts >= MAX_ATTEMPTS) {
+    // 制限を超えた場合
+    document.getElementById("message").innerText = "You have reached the maximum number of attempts.";
+    document.getElementById("quiz").style.display = "none";
+  }
+});
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="" id="banana_all">
+            <img src="" id="banana_off">
+            <div id="menu_list">
+                <li>
+                    <a href="index.html">
+                        <p>ホーム</p>
+                    </a>
+                    <a href="index.html">
+                        <p>フェアトレードとは</p>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </header>
+
+    <div class="result_area">
+        <h1>結果</h1>
+        <div><h2 class="result_text">あなたの点数は</h2><h1 id="result"></h1><h2 class="base_point">点/１００点中です</h2></div>
+    </div>
+
+    <div class="answer_detail">
+
+
+    </div>
+
+    <div class="result_operation">
+        <div id="next_btn"><img src="img/next_banana.png" class="result_next_banana_img"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

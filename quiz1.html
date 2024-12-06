@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let ReturnBtn=document.getElementById("return_btn");
+            let NextBtn=document.getElementById("next_btn");
+            let Option1=document.getElementById("option1");
+            let Option2=document.getElementById("option2");
+            let Option3=document.getElementById("option3");
+            let Option4=document.getElementById("option4");
+            let YourAnswer=document.getElementById("your_answer");
+            let YourOption="";
+
+            Option1.addEventListener('click',()=>{
+                localStorage.setItem("option1_answer","wrong")
+                YourOption="①";
+                YourAnswer.innerHTML=YourOption;
+            })
+            Option2.addEventListener('click',()=>{
+                localStorage.setItem("option1_answer","right")
+                YourOption="②";
+                YourAnswer.innerHTML=YourOption;
+            })
+            Option3.addEventListener('click',()=>{
+                localStorage.setItem("option1_answer","wrong")
+                YourOption="③";
+                YourAnswer.innerHTML=YourOption;
+            })
+            Option4.addEventListener('click',()=>{
+                localStorage.setItem("option1_answer","wrong")
+                YourOption="④";
+                YourAnswer.innerHTML=YourOption;
+            })
+
+            
+
+            ReturnBtn.addEventListener('click', () => {       
+                window.location.href="index.html";
+            })
+            NextBtn.addEventListener('click', () => {
+                setTimeout(function() {
+                    window.location.href="quiz2.html";
+                }, 500); 
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="" id="banana_all">
+            <img src="" id="banana_off">
+            <div id="menu_list">
+                <li>
+                    <a href="index.html">
+                        <p>ホーム</p>
+                    </a>
+                    <a href="index.html">
+                        <p>フェアトレードとは</p>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </header>
+
+    <div class="question1">
+        <h3>Question1</h3>
+        <p>aaa</p>
+    </div>
+    <div class="option_area">
+        <div class="first_option_line">
+            <h2 id="option1">a</h2>
+            <h2 id="option2">b</h2>
+        </div>
+        <div class="second_option_line">
+            <h2 id="option3">c</h2>
+            <h2 id="option4">d</h2>
+        </div>
+    </div>
+    <div id="your_answer_area"><h3 class="point_h3">あなたの選んだ選択肢は</h3><h3 id="your_answer">___</h3><h3>です</h3></div>
+    <div class="operation">
+        <div id="return_btn"><img src="img/return_banana.png" class="return_banana_img"></div>
+        <div id="next_btn"><img src="img/next_banana.png" class="next_banana_img"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

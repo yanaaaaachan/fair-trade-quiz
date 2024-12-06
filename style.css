@@ -1,0 +1,195 @@
+body{
+    font-family: "UD デジタル 教科書体 N-B","UD Digi Kyokasho N-B";
+    background-image: url("img/background_img.png");
+}
+
+#menu_list{
+    display: none;
+    list-style: none;
+position: absolute;
+right: 0;
+}
+#menu_list a{
+    text-decoration-line:none;
+    color:black;
+}
+#menu_list p{
+    text-decoration-line:none;
+    color:black;
+    transition: transform 0.3s;
+}
+#menu_list p:hover{
+    transform: translateY(6px);
+}
+.menu{
+    text-align: right;
+    background-color: transparent;
+    position: relative;
+    right:0;
+    
+}
+.title{
+    left:25%;
+    top:30%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+.title input{
+    margin-top: 60px;
+}
+
+
+#banana_all {
+    width: 70px;
+  opacity: 1;
+  /* transform: translateX(10%); 右からスライドさせる */
+  transition: none;
+  transition: transform 0.3s;
+  border: 2px solid transparent;
+}
+#banana_all:active{
+    transform: translateY(4px);
+}
+#start_btn{
+    background-color: rgb(255, 255, 119);
+    padding: 7px 50px;
+    width: fit-content;
+    border-radius: 400px;
+    box-shadow: 0 7px 0 rgb(243, 203, 3);
+    transition: transform 0.3s;
+margin-left:30px;
+margin-top:40px;
+}
+#start_btn:active{
+    background-color: rgb(255, 255, 175);
+    box-shadow:none;
+    transform: translateY(4px);
+}
+
+
+.question1{
+    margin-top: 20%;
+    margin-left: 8%;
+    padding: 5px 130px 150px 130px;
+    /* margin:10px; */
+    position: absolute;
+    background-color: rgb(255, 249, 198);
+    border-radius: 100px;
+    text-align: center;
+}
+
+.option_area h2{
+    background-color: antiquewhite;
+    background-color: rgb(255, 255, 119);
+    padding: 7px 50px;
+    width: fit-content;
+    border-radius: 400px;
+    box-shadow: 0 7px 0 rgb(243, 203, 3);
+    transition: transform 0.3s;
+}
+.option_area h2:active{
+    background-color: rgb(255, 255, 175);
+    box-shadow:none;
+    transform: translateY(4px);
+}
+.first_option_line{
+    display: flex;
+    gap: 50px;
+position: absolute;
+left:18%;
+top:53%;
+}
+.second_option_line{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    left:18%;
+    top:65%;
+}
+/* .operation{
+    display: flex;
+bottom: 20px;
+position: absolute;
+} */
+
+.return_banana_img{
+    width:130px;
+    transition: transform 0.3s;
+    position: absolute;
+    left:5px;
+    bottom: 27px;
+}
+
+.return_banana_img:active{
+    transform: translateY(4px);
+}
+.next_banana_img{
+    /* margin-top: 8px; */
+    width:120px;
+    /* margin-left:50%; */
+    transition: transform 0.3s;
+    position: absolute;
+    right:5px;
+    bottom: 30px;
+}
+.next_banana_img:active{
+    transform: translateY(4px);
+}
+.result_operation{
+    width:60%;
+    position: absolute;
+    right:5px;
+    top: 750px;
+    transition: transform 0.3s;
+}
+.result_operation:active{
+    transform: translateY(4px);
+}
+#your_answer_area{
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    bottom: 100px;
+    left:20%;
+    display: flex;
+}
+.result_area{
+    margin-top: 20%;
+    margin-left:0%;
+    padding: 5px 130px 100px 130px;
+    /* margin:10px; */
+    /* position: absolute; */
+    background-color: rgb(255, 249, 198);
+    border-radius: 100px;
+    text-align: center;
+}
+.result_area h1{
+    text-align: center;
+}
+.result_area h2{
+    white-space: nowrap;
+}
+.result_next_banana_img{
+    /* margin-top: 8px; */
+    width:120px;
+    /* margin-left:50%; */
+    transition: transform 0.3s;
+    position: absolute;
+    right:5px;
+    bottom: 0;
+}
+.result_next_banana_img:active{
+    transform: translateY(4px);
+}
+
+/* .point_h2{
+    margin-left:-50%;
+}
+.base_point{
+    margin-left:60%;
+}
+.result_text{
+    margin-top: 50%;
+
+} */
