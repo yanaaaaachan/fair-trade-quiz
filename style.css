@@ -124,14 +124,14 @@ margin-top:40px;
     gap: 50px;
 position: absolute;
 left:12%;
-top:58%;
+top:60%;
 }
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
     left:12%;
-    top:69%;
+    top:70%;
 }
 /* .operation{
     display: flex;
@@ -179,7 +179,7 @@ position: absolute;
     position:absolute;
     text-align: center;
     justify-content: center;
-    bottom: 73px;
+    bottom: 68px;
     left:16%;
     display: flex;
 }
