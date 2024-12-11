@@ -124,14 +124,14 @@ margin-top:40px;
     gap: 50px;
 position: absolute;
 left:12%;
-top:60%;
+top:65%;
 }
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
     left:12%;
-    top:70%;
+    top:75%;
 }
 /* .operation{
     display: flex;
