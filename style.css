@@ -87,7 +87,7 @@ margin-top:40px;
     border-radius: 30px;
     text-align: center;
     /* line-height: ; */
-    
+    padding-bottom: 10px;
 }
 
 .question1 span{
@@ -118,14 +118,14 @@ margin-top:40px;
     display: flex;
     gap: 50px;
 position: absolute;
-left:15%;
+left:12%;
 top:60%;
 }
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
-    left:15%;
+    left:12%;
     top:70%;
 }
 /* .operation{
