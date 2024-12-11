@@ -58,14 +58,16 @@ right: 25%;
 }
 #start_btn{
     background-color: rgb(255, 255, 119);
-    padding: 7px 50px;
+    padding: 7px 40px;
     width: fit-content;
     border-radius: 400px;
     box-shadow: 0 7px 0 rgb(243, 203, 3);
     transition: transform 0.3s;
     /* 改訂↓ */
-margin-left:30px;
+
+margin-left:40px;
 margin-top:40px;
+
 
 }
 #start_btn:active{
@@ -87,7 +89,7 @@ margin-top:40px;
     border-radius: 30px;
     text-align: center;
     /* line-height: ; */
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .question1 span{
