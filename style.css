@@ -86,11 +86,14 @@ margin-top:40px;
     background-color: rgb(255, 249, 198);
     border-radius: 30px;
     text-align: center;
+    line-height: 60%;
+    
 }
 .question_option{
     margin-left: 8%;
     margin-right: 8%;
     text-align: left;
+    line-height: 90%;
 }
 .option_area h2{
     background-color: antiquewhite;
