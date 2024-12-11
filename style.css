@@ -86,8 +86,12 @@ margin-top:40px;
     background-color: rgb(255, 249, 198);
     border-radius: 30px;
     text-align: center;
-    line-height: 60%;
+    /* line-height: ; */
     
+}
+
+.question1 span{
+    border-bottom:1px solid black;
 }
 .question_option{
     margin-left: 8%;
