@@ -10,7 +10,7 @@ position: absolute;
 right: 0;
 }
 #menu_list a{
-    text-decoration-line:none;
+    /* text-decoration-line:none; */
     color:black;
 }
 #menu_list p{
@@ -29,7 +29,7 @@ right: 0;
     
 }
 .title{
-    left:25%;
+    left:20%;
     top:30%;
     position: absolute;
     text-align: center;
@@ -54,12 +54,15 @@ right: 0;
 #start_btn{
     background-color: rgb(255, 255, 119);
     padding: 7px 50px;
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 400px;
     box-shadow: 0 7px 0 rgb(243, 203, 3);
     transition: transform 0.3s;
+    /* 改訂↓ */
 margin-left:30px;
 margin-top:40px;
+/* 改訂↓ */
+width:25%;
 }
 #start_btn:active{
     background-color: rgb(255, 255, 175);
@@ -134,7 +137,8 @@ position: absolute;
     bottom: 30px;
 }
 .next_banana_img:active{
-    transform: translateY(4px);
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
 }
 .result_operation{
     width:60%;
