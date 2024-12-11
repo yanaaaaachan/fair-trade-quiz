@@ -65,7 +65,7 @@ right: 25%;
     transition: transform 0.3s;
     /* 改訂↓ */
 
-margin-left:40px;
+margin-left:37px;
 margin-top:40px;
 
 
@@ -124,14 +124,14 @@ margin-top:40px;
     gap: 50px;
 position: absolute;
 left:12%;
-top:60%;
+top:58%;
 }
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
     left:12%;
-    top:70%;
+    top:68%;
 }
 /* .operation{
     display: flex;
@@ -140,11 +140,11 @@ position: absolute;
 } */
 
 .return_banana_img{
-    width:130px;
+    width:120px;
     transition: transform 0.3s;
     position: absolute;
     left:5px;
-    bottom: 27px;
+    bottom: 15px;
 }
 
 .return_banana_img:active{
@@ -153,22 +153,22 @@ position: absolute;
 }
 .next_banana_img{
     /* margin-top: 8px; */
-    width:130px;
+    width:120px;
     /* margin-left:50%; */
     transition: transform 0.3s;
     position: absolute;
     right:5px;
-    bottom: 30px;
+    bottom: 15px;
 }
 .next_banana_img:active{
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
 }
 .result_operation{
-    width:60%;
+    width:55%;
     position: absolute;
     right:5px;
-    top: 750px;
+    bottom: -2500px;
     transition: transform 0.3s;
 }
 .result_operation:active{
@@ -180,7 +180,7 @@ position: absolute;
     text-align: center;
     justify-content: center;
     bottom: 70px;
-    left:20%;
+    left:18%;
     display: flex;
 }
 #your_answer{
@@ -198,6 +198,20 @@ position: absolute;
     text-align: center;
     line-height: 60%;
     padding-bottom: 30px;
+}
+.answer_detail{
+    margin-top:100%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 50px 55px 150px 55px;
+    /* margin:10px; */
+    position: absolute;
+    background-color: rgb(255, 249, 198);
+    border-radius: 30px;
+    text-align: left;
+    padding: 50px 55px 150px 55px;
+    /* margin:10px; */
+
 }
 .result_area h1{
     text-align: center;
@@ -223,7 +237,12 @@ position: absolute;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
 }
-
+.detail_color{
+    color:grey;
+}
+.answer_detail span{
+    border-bottom: 1px solid black;
+}
 /* .point_h2{
     margin-left:-50%;
 }
