@@ -55,15 +55,14 @@ right: 0;
 #start_btn{
     background-color: rgb(255, 255, 119);
     padding: 7px 50px;
-    /* width: fit-content; */
+    width: fit-content;
     border-radius: 400px;
     box-shadow: 0 7px 0 rgb(243, 203, 3);
     transition: transform 0.3s;
     /* 改訂↓ */
 margin-left:30px;
 margin-top:40px;
-/* 改訂↓ */
-width:25%;
+
 }
 #start_btn:active{
     background-color: rgb(255, 255, 175);
@@ -74,6 +73,7 @@ width:25%;
 
 
 .question1{
+    height:43%;
     margin-top: 7%;
     margin-left: 8%;
     margin-right: 8%;
