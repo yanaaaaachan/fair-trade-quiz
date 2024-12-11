@@ -65,7 +65,7 @@ right: 25%;
     transition: transform 0.3s;
     /* 改訂↓ */
 
-margin-left:37px;
+margin-left:30px;
 margin-top:40px;
 
 
@@ -124,14 +124,14 @@ margin-top:40px;
     gap: 50px;
 position: absolute;
 left:12%;
-top:58%;
+top:56%;
 }
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
     left:12%;
-    top:68%;
+    top:65%;
 }
 /* .operation{
     display: flex;
@@ -140,7 +140,7 @@ position: absolute;
 } */
 
 .return_banana_img{
-    width:120px;
+    width:110px;
     transition: transform 0.3s;
     position: absolute;
     left:5px;
@@ -153,7 +153,7 @@ position: absolute;
 }
 .next_banana_img{
     /* margin-top: 8px; */
-    width:120px;
+    width:110px;
     /* margin-left:50%; */
     transition: transform 0.3s;
     position: absolute;
@@ -179,8 +179,8 @@ position: absolute;
     position:absolute;
     text-align: center;
     justify-content: center;
-    bottom: 70px;
-    left:18%;
+    bottom: 80px;
+    left:16%;
     display: flex;
 }
 #your_answer{
