@@ -49,7 +49,8 @@ right: 0;
   border: 2px solid transparent;
 }
 #banana_all:active{
-    transform: translateY(4px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 #start_btn{
     background-color: rgb(255, 255, 119);
@@ -67,21 +68,27 @@ width:25%;
 #start_btn:active{
     background-color: rgb(255, 255, 175);
     box-shadow:none;
-    transform: translateY(4px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 
 
 .question1{
-    margin-top: 20%;
+    margin-top: 7%;
     margin-left: 8%;
-    padding: 5px 130px 150px 130px;
+    margin-right: 8%;
+    /* padding: 5px 130px 150px 130px; */
     /* margin:10px; */
     position: absolute;
     background-color: rgb(255, 249, 198);
-    border-radius: 100px;
+    border-radius: 30px;
     text-align: center;
 }
-
+.question_option{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
+}
 .option_area h2{
     background-color: antiquewhite;
     background-color: rgb(255, 255, 119);
@@ -94,21 +101,22 @@ width:25%;
 .option_area h2:active{
     background-color: rgb(255, 255, 175);
     box-shadow:none;
-    transform: translateY(4px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 .first_option_line{
     display: flex;
     gap: 50px;
 position: absolute;
-left:18%;
-top:53%;
+left:15%;
+top:60%;
 }
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
-    left:18%;
-    top:65%;
+    left:15%;
+    top:70%;
 }
 /* .operation{
     display: flex;
@@ -125,7 +133,8 @@ position: absolute;
 }
 
 .return_banana_img:active{
-    transform: translateY(4px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 .next_banana_img{
     /* margin-top: 8px; */
@@ -137,8 +146,8 @@ position: absolute;
     bottom: 30px;
 }
 .next_banana_img:active{
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 .result_operation{
     width:60%;
@@ -148,15 +157,19 @@ position: absolute;
     transition: transform 0.3s;
 }
 .result_operation:active{
-    transform: translateY(4px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 #your_answer_area{
     position:absolute;
     text-align: center;
     justify-content: center;
-    bottom: 100px;
+    bottom: 70px;
     left:20%;
     display: flex;
+}
+#your_answer{
+    color:blue;
 }
 .result_area{
     margin-top: 20%;
@@ -184,7 +197,8 @@ position: absolute;
     bottom: 0;
 }
 .result_next_banana_img:active{
-    transform: translateY(4px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 
 /* .point_h2{
