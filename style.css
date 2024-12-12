@@ -168,7 +168,7 @@ position: absolute;
     width:55%;
     position: absolute;
     right:5px;
-    bottom: -2500px;
+    bottom: -3000px;
     transition: transform 0.3s;
 }
 .result_operation:active{
@@ -220,6 +220,10 @@ position: absolute;
     white-space: nowrap;
     text-align: center;
     margin-top: 50px;
+}
+.result_area h4{
+    color:red;
+    line-height: 100%;
 }
 #result{
     margin-top: 50px;
