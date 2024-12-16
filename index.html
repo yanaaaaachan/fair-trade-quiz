@@ -22,10 +22,42 @@
                     alert("名前を入力してください");
 
                 }
+                
             })
 
         });
     </script>
+    <!-- <script>
+                document.addEventListener('DOMContentLoaded', () => {
+document.getElementById("start_btn").addEventListener("click", async () => {
+            const userName = document.getElementById("user_name").value;
+
+            if (!userName) {
+                alert("名前を入力してください！");
+                return;
+            }
+
+            try {
+                const response = await fetch("http://localhost:3000/save-name", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name: userName }),
+                });
+                console.log("ok")
+
+                if (response.ok) {
+                    alert("名前をExcelに保存しました！");
+                } else {
+                    alert("エラーが発生しました。");
+                }
+            } catch (error) {
+                console.error("エラー:", error);
+            }
+        });
+    });
+    </script> -->
 </head>
 <body>
     <header>

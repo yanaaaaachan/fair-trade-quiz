@@ -192,12 +192,13 @@ position: absolute;
     margin-right: 8%;
     padding: 50px 55px 150px 55px;
     /* margin:10px; */
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(255, 249, 198);
     border-radius: 30px;
     text-align: center;
     line-height: 60%;
     padding-bottom: 30px;
+    position: relative;
 }
 .answer_detail{
     margin-top:100%;
@@ -246,6 +247,46 @@ position: absolute;
 }
 .answer_detail span{
     border-bottom: 1px solid black;
+}
+#your_answers1{
+    color:black;
+}
+#your_answers2{
+    color:black;
+}
+#your_answers3{
+    color:black;
+}
+#your_answers4{
+    color:black;
+}
+#your_answers5{
+    color:black;
+}
+#your_answers6{
+    color:black;
+}
+#your_answers7{
+    color:black;
+}
+#your_answers8{
+    color:black;
+}
+#your_answers9{
+    color:black;
+}
+#your_answers10{
+    color:black;
+}
+.result_img{
+    position: absolute;
+margin-top:0px;
+margin-left: -10px;
+z-index: 10;
+transform: rotate(-30deg);
+}
+#macaron_or_not{
+    width:230px;
 }
 /* .point_h2{
     margin-left:-50%;

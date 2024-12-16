@@ -20,6 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
         IsBananaAll = !IsBananaAll;
 
     });
+
+    let StartBtn=document.getElementById("start_btn");
+    (StartBtn)=>{
+        let APP={
+            data:[],
+            init(){
+                APP.addEventListeners();
+            },
+            addEventListeners(){
+               StartBtn.addEventListener("click",APP.createData) 
+            },
+            createData(e){
+                e.preventDefault();
+                let formData=new FormData(StartBtn)
+                APP.data.push(Array.form(formData.values()));
+                console.log(APP.data)
+            }
+        };
+        
+        document.addEventListener("DOMContentLoaded",APP.init);
+
+    }
 });
 
 //スマホ版
@@ -37,6 +59,7 @@ function picChangeMobile(){
     });
 
 }
+
 
 //★PC版
 // function picChangePC(){
