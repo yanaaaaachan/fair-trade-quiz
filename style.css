@@ -12,6 +12,17 @@ position: absolute;
 top: 10px; /* ボタンの高さと一致 */
 right: 25%;
 }
+@media screen and (min-width: 600px) {
+    #menu_list{
+        display: none;
+        list-style: none;
+    /* position: absolute; */
+    /* right: 0; */
+    position: absolute;
+    top: 10px; /* ボタンの高さと一致 */
+    right: 10%;
+    }
+}
 #menu_list a{
     /* text-decoration-line:none; */
     color:black;
@@ -22,6 +33,7 @@ right: 25%;
     color:black;
     transition: transform 0.3s;
 }
+
 #menu_list p:hover{
     transform: translateY(6px);
 }
@@ -39,6 +51,17 @@ right: 25%;
     text-align: center;
     justify-content: center;
 }
+
+@media screen and (min-width: 600px) { 
+    .title{
+        left:40%;
+        top:30%;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+    }
+ }
+
 .title input{
     margin-top: 60px;
 }
@@ -91,6 +114,23 @@ margin-top:40px;
     line-height: 60%;
     padding-bottom: 15px;
 }
+@media screen and (min-width: 600px) {
+    .question1{
+        height:43%;
+        width:40%;
+        margin-left: 28%;
+        margin-right: 8%;
+        /* padding: 5px 130px 150px 130px; */
+        /* margin:10px; */
+        position: absolute;
+        background-color: rgb(255, 249, 198);
+        border-radius: 30px;
+        text-align: center;
+        line-height: 60%;
+        /* padding-bottom: 15px; */
+        padding:10px;
+    }
+}
 .question1 h4{
     line-height: 100%;
 }
@@ -126,12 +166,30 @@ position: absolute;
 left:12%;
 top:60%;
 }
+@media screen and (min-width: 600px) {
+    .first_option_line{
+        display: flex;
+        gap: 50px;
+    position: absolute;
+    left:37%;
+    top:60%;
+    }
+}
 .second_option_line{
     display: flex;
     gap: 50px;
     position: absolute;
     left:12%;
     top:70%;
+}
+@media screen and (min-width: 600px) {
+    .second_option_line{
+        display: flex;
+        gap: 50px;
+        position: absolute;
+        left:37%;
+        top:70%;
+    }
 }
 /* .operation{
     display: flex;
@@ -182,6 +240,16 @@ position: absolute;
     bottom: 68px;
     left:16%;
     display: flex;
+}
+@media screen and (min-width: 600px) {
+    #your_answer_area{
+        position:absolute;
+        text-align: center;
+        justify-content: center;
+        bottom: 68px;
+        left:39%;
+        display: flex;
+    }
 }
 #your_answer{
     color:blue;
